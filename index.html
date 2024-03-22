@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="contacts">
+        <h2>Список контактов</h2>
+      </div>
+
+      <div class="add-contact">
+        <button>Добавить контакт</button>
+      </div>
+    </div>
+
+    <!-- модалка -->
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="closeBtn">&times;</span>
+          <h2>Добавить контакт</h2>
+        </div>
+        <div class="modal-body">
+          <input type="file" id="photo" />
+          <div id="file"></div>
+          <input id="name" type="text" placeholder="Имя контакта" />
+          <input id="lastName" type="text" placeholder="Фамилия контакта" />
+          <input id="phone" type="text" placeholder="Номер телефона" />
+          <button id="saveContact">Сохранить</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/main.js"></script>
+</html>
